@@ -4,8 +4,8 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Install Python deps
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirments.txt .
+RUN pip install --no-cache-dir -r requirments.txt
 
 # Copy backend code
 COPY . .
